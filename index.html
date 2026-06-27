@@ -9,10 +9,11 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',-apple-system,system-ui,sans-serif;background:#f8f6f3;color:#2d2a24;line-height:1.5;-webkit-font-smoothing:antialiased}
-.banner{background:linear-gradient(135deg,rgba(26,26,46,.92),rgba(22,33,62,.88),rgba(15,52,96,.85)),url('perfume-hero.jpg') center/cover no-repeat;color:#fff;padding:48px 20px;text-align:center}
-.banner-logo{display:block;margin:0 auto 10px;max-height:80px;width:auto}
-.banner h1{font-size:36px;font-weight:700;letter-spacing:-0.5px;margin-bottom:6px}
-.banner .badge{display:inline-block;background:#e94560;color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px;margin-bottom:10px}
+.banner{background:#fcf9f4;color:#2d2a24;padding:32px 20px;text-align:center}
+.banner .inner{display:flex;align-items:center;justify-content:center;gap:20px;max-width:600px;margin:0 auto}
+.banner-logo{max-height:120px;width:auto}
+.banner h1{font-size:36px;font-weight:700;letter-spacing:-0.5px;margin-bottom:0}
+.banner .badge{display:inline-block;background:#e94560;color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px;margin-bottom:14px}
 .container{max-width:1200px;margin:0 auto;padding:20px 16px}
 .callout{background:#fff8e7;border-left:4px solid #d4a373;padding:16px 20px;border-radius:0 8px 8px 0;margin-bottom:24px;font-size:14px;color:#5c4a32}
 .callout strong{color:#8b5e34}.callout p{margin:4px 0}
@@ -55,8 +56,10 @@ tbody td{padding:10px;vertical-align:middle;color:#3d3832}
   .label-30{left:3%}.label-8{right:3%}
 }
 @media(max-width:768px){
-  .banner h1{font-size:26px}
+  .banner h1{font-size:24px}
   .banner{padding:24px 16px}
+  .banner .inner{gap:14px}
+  .banner-logo{max-height:80px}
   .container{padding:12px 8px}
   thead th{padding:10px 6px;font-size:11px}
   tbody td{padding:8px 6px;font-size:12px}
@@ -69,8 +72,10 @@ tbody td{padding:10px;vertical-align:middle;color:#3d3832}
 
 <div class="banner">
   <span class="badge">5% OFF till 7th July</span>
-  <img src="logo.jpg" alt="IRAM Perfume" class="banner-logo">
-  <h1>IRAM Perfume</h1>
+  <div class="inner">
+    <img src="logo.jpg" alt="IRAM Perfume" class="banner-logo">
+    <h1>IRAM Perfume</h1>
+  </div>
 </div>
 
 <div class="container">
